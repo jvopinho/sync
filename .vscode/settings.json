@@ -1,0 +1,107 @@
+{
+	"editor.tabSize": 2,
+  "material-icon-theme.folders.customClones": [
+		{
+			"name": "repositories",
+			"base": "custom",
+			"color": "#28b463",
+			"lightColor": "#58d68d",
+			"folderNames": ["repositories"],
+		},
+    	{
+			"name": "mappers",
+			"base": "decorators",
+			"color": "#008B8B",
+			"lightColor": "#008B8B",
+      "folderNames": ["mappers"],
+		},
+		{
+			"name": "usecases",
+			"base": "pdm",
+			"color": "#1E90FF",
+			"lightColor": "#1E90FF",
+			"folderNames": ["usecases"],
+		},
+		{
+			"name": "entities",
+			"base": "class",
+			"color": "#ef2e8b",
+			"lightColor": "#ef2e8b",
+			"folderNames": ["entities"],
+		},
+  ],
+  "material-icon-theme.files.customClones": [
+		{
+			"name": "usecase",
+			"base": "pdm",
+			"color": "#1E90FF",
+			"lightColor": "#1E90FF"
+		},
+		{
+			"name": "helper",
+			"base": "dhall",
+			"color": "#afb42b",
+			"lightColor": "#afb42b"
+		},
+    	{
+			"name": "interface",
+			"base": "template",
+			"color": "#1E90FF",
+			"lightColor": "#1E90FF"
+		},
+    	{
+			"name": "dto",
+			"base": "template",
+			"color": "#ef2e8b",
+			"lightColor": "#ef2e8b"
+		},
+    	{
+			"name": "table",
+			"base": "table",
+			"color": "#c5c5c5",
+			"lightColor": "#c5c5c5"
+		},
+    	{
+			"name": "schema",
+			"base": "table",
+			"color": "#ef2e8b",
+			"lightColor": "#ef2e8b"
+		},
+		{
+			"name": "model",
+			"base": "3d",
+			"color": "#ef2e8b",
+			"lightColor": "#ef2e8b"
+		},
+    	{
+			"name": "validation",
+			"base": "payload",
+			"color": "#ef5350",
+			"lightColor": "#ef5350"
+		},
+    	{
+			"name": "factory",
+			"base": "renovate",
+			"color": "#ef5350",
+			"lightColor": "#ef5350"
+		},
+  ],
+	"material-icon-theme.folders.associations": {
+		"logger": "mock",
+		// "repositories": "class",
+		"observer": "review",
+		"domain": "custom",
+		"workspace": "store"
+	},
+  "material-icon-theme.files.associations": {
+		"*.usecase.ts": "usecase",
+		"*.interface.ts": "interface",
+		"*.dto.ts": "dto",
+		"*.model.ts": "model",
+		"*.schema.ts": "schema",
+		"*.table.ts": "table",
+		"*.validation.ts": "validation",
+		"*.make.ts": "factory",
+		"*.helper.ts": "helper"
+	},
+}

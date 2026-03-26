@@ -1,0 +1,51 @@
+{
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "./syenv.sh --debug --env-file .env --var NODE_ENV=local -- tsx --watch src/index.ts",
+    "barrel": "tsx barrel.ts src --no-semi --simple-quote",
+    "db:generate": "./syenv.sh --debug --env-file .env --var NODE_ENV=local -- drizzle-kit generate",
+    "db:migrate": "./syenv.sh --debug --env-file .env --var NODE_ENV=local -- tsx src/infra/database/drizzle/drizzle-migrate.ts",
+    "db:introspect:pg": "./syenv.sh --debug --env-file .env --var NODE_ENV=local -- drizzle-kit introspect",
+    "db:studio": "./syenv.sh --debug --env-file .env --var NODE_ENV=local -- drizzle-kit studio"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "@types/bcrypt": "^6.0.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.9.1",
+    "@types/pg": "^8.15.5",
+    "@types/uuid": "^11.0.0",
+    "chokidar": "^5.0.0",
+    "drizzle-kit": "^0.31.5",
+    "eslint": "^9.38.0",
+    "eslint-plugin-import-helpers": "^2.0.1",
+    "eslint-plugin-unused-imports": "^4.3.0",
+    "globals": "^16.4.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "@fastify/jwt": "^10.0.0",
+    "@fastify/swagger": "^9.5.2",
+    "@fastify/swagger-ui": "^5.2.3",
+    "@isluny/bitfields": "^1.0.5",
+    "@isluny/logger": "github:IsLuny/logger#main",
+    "axios": "^1.13.2",
+    "bcrypt": "^6.0.0",
+    "chalk": "^5.6.2",
+    "dayjs": "^1.11.18",
+    "drizzle-orm": "^0.44.7",
+    "fastify": "^5.6.1",
+    "fastify-plugin": "^5.1.0",
+    "fastify-type-provider-zod": "^6.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3",
+    "postgres": "^3.4.7",
+    "uuid": "^13.0.0",
+    "zod": "^4.1.12"
+  }
+}

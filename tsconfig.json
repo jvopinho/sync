@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "es2022",
+        "lib": [
+            "ES6",
+            "ESNext",
+            "ESNext.BigInt"
+        ],
+        "noEmit": true,
+        "removeComments": true,
+        "strict": true,
+        "rootDir": "./src",
+        "typeRoots": [
+            "./src/@types/*",
+            "node_modules/@types"
+        ],
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+		"moduleResolution": "node",
+        "ignoreDeprecations": "6.0",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "strictPropertyInitialization": false,
+        "baseUrl": "./src",
+        "paths": {
+            "@/*": ["./*"],
+            "@/drizzle/*": ["./infra/database/drizzle/*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts", 
+        "./barrel.ts",
+    ],
+    "exclude": [
+        "build",
+        "node_modules",
+        "package-lock.json",
+        "package.json",
+        "prisma/client"
+    ]
+}
